@@ -28,14 +28,6 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "up": "docker-compose up -d",
-    "down": "docker-compose down",
-    "downv": "docker-compose down -v",
-    "hasura:status": "cd hasura && hasura migrate status --skip-update-check",
-    "hasura:migrate": "cd hasura && hasura migrate apply",
-    "hasura:migrate:ci": "cd hasura && hasura migrate apply --endpoint=http://localhost:8082",
-    "hasura:console": "cd hasura && hasura console",
-    "hasura:generate": "graphql-codegen --config ./graphql/hasura/codegen.hasura.yml",
     "github:generate": "graphql-codegen --config ./graphql/github/codegen.yml",
     "storybook": "nx run ui-components:storybook",
     "test:web-ui:coverage": "nx test web-ui --code-coverage --no-cache"
@@ -72,6 +64,7 @@
     "passport-jwt": "^4.0.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
+    "react-hook-form": "^5.7.2",
     "react-router-dom": "^5.1.2",
     "reflect-metadata": "^0.1.13",
     "unfetch": "^4.1.0"

@@ -10,6 +10,12 @@ query MyFirstRepositories {
           id
           name
           url
+          issues {
+            totalCount
+          }
+          pullRequests {
+            totalCount
+          }
         }
       }
       pageInfo {
