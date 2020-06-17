@@ -42,3 +42,8 @@ jobs:
         with:
           github-token: ${{ secrets.NX_GITHUB_API_TOKEN }}
           lcov-file: ./coverage/apps/web-ui/lcov.info
+
+      - uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          github-token: ${{ secrets.NX_GITHUB_API_TOKEN }}
+          lcov-file: ./apps/web-ui-e2e/coverage/lcov.info
